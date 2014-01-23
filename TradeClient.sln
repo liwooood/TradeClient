@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TradeClient", "TradeClient\TradeClient.vcxproj", "{046A1D68-E65A-43BC-BBE0-0505EFB6C405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{046A1D68-E65A-43BC-BBE0-0505EFB6C405}.Debug|Win32.ActiveCfg = Debug|Win32
+		{046A1D68-E65A-43BC-BBE0-0505EFB6C405}.Debug|Win32.Build.0 = Debug|Win32
+		{046A1D68-E65A-43BC-BBE0-0505EFB6C405}.Release|Win32.ActiveCfg = Release|Win32
+		{046A1D68-E65A-43BC-BBE0-0505EFB6C405}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
