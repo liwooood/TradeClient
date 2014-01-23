@@ -2,7 +2,7 @@
 
 
 
-#include <list>
+#include <vector>
 
 #include <boost/filesystem.hpp>
 #include <boost/foreach.hpp>
@@ -43,12 +43,13 @@ bool ConfigManager::LoadConfig()
 	pugi::xpath_node node;
 	node = doc.select_single_node("/config/TradeGateway");
 	std::string serverInfo = node.node().child_value();
-	/*
+	
+	std::string SOH = ":";
 	std::vector<std::string> key_values;
-	boost::split(key_values, serverInfo, boost::is_any_of(":"));
+	boost::split(key_values, serverInfo, boost::is_any_of(SOH));
 	m_sTradeGatewayIp = key_values[0];
 	m_nTradeGatewayPort = boost::lexical_cast<int>(key_values[1]);
-	*/
+	
 	return true;
 }
 

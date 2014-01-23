@@ -6,6 +6,8 @@
 #include "TradeClient.h"
 #include "TradeClientDlg.h"
 
+#include "config/ConfigManager.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -69,6 +71,9 @@ BOOL CTradeClientApp::InitInstance()
 	// TODO: 应适当修改该字符串，
 	// 例如修改为公司或组织名
 	SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
+
+	// 加载配置文件
+	gConfigManager::instance().LoadConfig();
 
 	CTradeClientDlg dlg;
 	m_pMainWnd = &dlg;

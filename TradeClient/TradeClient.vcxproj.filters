@@ -27,9 +27,6 @@
     <Filter Include="配置\Debug">
       <UniqueIdentifier>{5d2423f4-ce0c-4889-920f-cf4ac90ae53e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="InnoSetup">
-      <UniqueIdentifier>{af88dc40-f023-4b3d-bdfb-ebe7a0affa37}</UniqueIdentifier>
-    </Filter>
     <Filter Include="登录">
       <UniqueIdentifier>{d0106137-dcff-4f9b-862b-6b161288f39b}</UniqueIdentifier>
     </Filter>
@@ -53,6 +50,9 @@
     </Filter>
     <Filter Include="第三方库\xml\pugixml">
       <UniqueIdentifier>{a2a6f20f-2d0c-4dbf-8f1b-9ee95952d94a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="安装包InnoSetup">
+      <UniqueIdentifier>{af88dc40-f023-4b3d-bdfb-ebe7a0affa37}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
