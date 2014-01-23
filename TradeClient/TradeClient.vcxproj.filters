@@ -9,26 +9,56 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="代理">
-      <UniqueIdentifier>{2684518f-5cac-4725-b8c9-57faa56ced2b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="网络层">
       <UniqueIdentifier>{5ad46b7e-3168-4d6c-86de-068eabb5c9cc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="超时">
-      <UniqueIdentifier>{b5da2401-b2bb-496d-9b80-a1477d57b539}</UniqueIdentifier>
+    <Filter Include="网络层\消息">
+      <UniqueIdentifier>{44d384d6-5aea-4101-8b1c-e5cc2c868c5d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="异步">
+    <Filter Include="配置">
+      <UniqueIdentifier>{ad2437d7-ffc8-47cb-934b-54e8a7b75a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="日志">
+      <UniqueIdentifier>{13e0c0d3-b7d8-489c-b8af-c706006d04bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="网络层\连接">
+      <UniqueIdentifier>{4723c95f-18ed-459f-8c0c-063da4f56efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="配置\Debug">
+      <UniqueIdentifier>{5d2423f4-ce0c-4889-920f-cf4ac90ae53e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InnoSetup">
+      <UniqueIdentifier>{af88dc40-f023-4b3d-bdfb-ebe7a0affa37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="登录">
+      <UniqueIdentifier>{d0106137-dcff-4f9b-862b-6b161288f39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="配置\release">
+      <UniqueIdentifier>{34f6e57c-9204-48cb-a476-a14a25120a5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="网络层\异步回调">
       <UniqueIdentifier>{608f371a-f5be-4320-81e6-5914b0a9330e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="网络层\代理">
+      <UniqueIdentifier>{2684518f-5cac-4725-b8c9-57faa56ced2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="第三方库">
+      <UniqueIdentifier>{373c931a-1700-4260-a7ff-d8b65b5ec6fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="第三方库\xml">
+      <UniqueIdentifier>{7a801229-d6e6-4491-bf1b-63d1941922b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="第三方库\xml\rapidxml">
+      <UniqueIdentifier>{d82fca7a-dc09-428f-bce0-6c633f4d1e53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="第三方库\xml\pugixml">
+      <UniqueIdentifier>{a2a6f20f-2d0c-4dbf-8f1b-9ee95952d94a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LoginDlg.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
     <ClInclude Include="Resource.h">
       <Filter>源文件</Filter>
     </ClInclude>
@@ -44,6 +74,42 @@
     <ClInclude Include="TradeClientDlg.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="network\CustomMessage.h">
+      <Filter>网络层\消息</Filter>
+    </ClInclude>
+    <ClInclude Include="network\MsgHeader.h">
+      <Filter>网络层\消息</Filter>
+    </ClInclude>
+    <ClInclude Include="log\FileLog.h">
+      <Filter>日志</Filter>
+    </ClInclude>
+    <ClInclude Include="config\ConfigManager.h">
+      <Filter>配置</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>登录</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\rapidxml.hpp">
+      <Filter>第三方库\xml\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\rapidxml_iterators.hpp">
+      <Filter>第三方库\xml\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\rapidxml_print.hpp">
+      <Filter>第三方库\xml\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\rapidxml_utils.hpp">
+      <Filter>第三方库\xml\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\pugiconfig.hpp">
+      <Filter>第三方库\xml\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\pugixml.hpp">
+      <Filter>第三方库\xml\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="network\SSLClientSync.h">
+      <Filter>网络层\连接</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TradeClient.cpp">
@@ -55,8 +121,26 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="network\CustomMessage.cpp">
+      <Filter>网络层\消息</Filter>
+    </ClCompile>
+    <ClCompile Include="log\FileLog.cpp">
+      <Filter>日志</Filter>
+    </ClCompile>
+    <ClCompile Include="config\ConfigManager.cpp">
+      <Filter>配置</Filter>
+    </ClCompile>
     <ClCompile Include="LoginDlg.cpp">
-      <Filter>源文件</Filter>
+      <Filter>登录</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\pugixml.cpp">
+      <Filter>第三方库\xml\pugixml</Filter>
+    </ClCompile>
+    <ClCompile Include="import_lib.cpp">
+      <Filter>第三方库</Filter>
+    </ClCompile>
+    <ClCompile Include="network\SSLClientSync.cpp">
+      <Filter>网络层\连接</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,5 +157,10 @@
     <Image Include="res\TradeClient.ico">
       <Filter>资源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Debug\TradeClient.xml">
+      <Filter>配置\Debug</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

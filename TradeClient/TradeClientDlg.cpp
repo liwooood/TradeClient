@@ -7,6 +7,9 @@
 #include "TradeClientDlg.h"
 #include "afxdialogex.h"
 
+#include "config/ConfigManager.h"
+#include "network/SSLClientSync.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -155,6 +158,25 @@ HCURSOR CTradeClientDlg::OnQueryDragIcon()
 
 void CTradeClientDlg::OnBnClickedButton1()
 {
-	// Connect a HelloWorld slot
+	bool bRet = false;
+
+	boost::asio::ssl::context ctx(boost::asio::ssl::context::sslv23);
+	//ctx.load_verify_file("ca.pem");
+
+	SSLClientSync * client = new SSLClientSync(ctx);
+
+	bRet = client->Connect(gConfigManager::instance().GetTradeGatewayIp(), gConfigManager::instance().GetTradeGatewayPort());
+
+	std::string request = "test";
+	std::string response = "";
+	
+	
+
+	bRet = client->Send(request, response);
+
+	client->Close();
+
+	delete client;
+
   
 }
