@@ -103,7 +103,7 @@ bool SSLClientSync::Connect(std::string ip, int port)
 			return m_bConnected;
 		}
 
-		/*
+		
 		ec = boost::asio::error::would_block;
 		socket.async_handshake(boost::asio::ssl::stream_base::client, boost::lambda::var(ec) = boost::lambda::_1);
 		do 
@@ -120,7 +120,7 @@ bool SSLClientSync::Connect(std::string ip, int port)
 			m_bConnected = false;
 			return m_bConnected;
 		}
-		*/
+		
 
 		gFileLog::instance().Log("连接交易网关成功!");
 		m_bConnected = true;
