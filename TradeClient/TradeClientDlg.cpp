@@ -10,6 +10,7 @@
 #include "config/ConfigManager.h"
 #include "network/SSLClientSync.h"
 
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -66,6 +67,7 @@ BEGIN_MESSAGE_MAP(CTradeClientDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_BUTTON1, &CTradeClientDlg::OnBnClickedButton1)
+	ON_BN_CLICKED(IDC_BUTTON2, &CTradeClientDlg::OnBnClickedButton2)
 END_MESSAGE_MAP()
 
 
@@ -179,4 +181,12 @@ void CTradeClientDlg::OnBnClickedButton1()
 	delete client;
 
   
+}
+
+
+void CTradeClientDlg::OnBnClickedButton2()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	
+	sockClient.Connect();
 }

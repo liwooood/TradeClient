@@ -110,6 +110,9 @@
     <ClInclude Include="network\SSLClientSync.h">
       <Filter>网络层\连接</Filter>
     </ClInclude>
+    <ClInclude Include="ClientSocket.h">
+      <Filter>网络层</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TradeClient.cpp">
@@ -141,6 +144,9 @@
     </ClCompile>
     <ClCompile Include="network\SSLClientSync.cpp">
       <Filter>网络层\连接</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSocket.cpp">
+      <Filter>网络层</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

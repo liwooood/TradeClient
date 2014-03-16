@@ -6,7 +6,7 @@
 
 #pragma once
 
-
+#include "ClientSocket.h"
 
 // CTradeClientDlg ¶Ô»°¿ò
 class CTradeClientDlg : public CDialogEx
@@ -36,4 +36,6 @@ public:
 	afx_msg void OnBnClickedButton1();
 
 	
+	afx_msg void OnBnClickedButton2();
+	ClientSocket sockClient;
 };
