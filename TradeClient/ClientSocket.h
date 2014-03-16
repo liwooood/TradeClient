@@ -9,6 +9,11 @@ public:
 	ClientSocket(void);
 	~ClientSocket(void);
 
-	int Connect();
+	int Connect(const char * server, int port, int connectTimeout);
+	int Send(const char * buf, int len, int flags);
+	int Recv(char* buf, int len, int flags);
+
+private:
+	SOCKET sockfd;
 };
 
